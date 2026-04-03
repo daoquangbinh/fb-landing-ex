@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import { marked } from "marked";
-import DOMPurify from "dompurify";
+import DOMPurify from "isomorphic-dompurify";
 import { X, RefreshCw, MessageCircle, Send } from "lucide-react";
 
 type Message = { role: "user" | "assistant"; content: string };
