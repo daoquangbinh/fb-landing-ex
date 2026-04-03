@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   description: "Tư vấn vận hành, phát triển concept và đào tạo nhân sự F&B cao cấp.",
 };
 
+import Chatbot from "@/components/ui/Chatbot";
+
 export default function RootLayout({
   children,
 }: {
@@ -28,6 +30,7 @@ export default function RootLayout({
     <html lang="vi" className="scroll-smooth">
       <body className={`${notoSerif.variable} ${manrope.variable} font-sans bg-[#FCF9F8] text-[#0A1D37]`}>
         {children}
+        <Chatbot />
       </body>
     </html>
   );
